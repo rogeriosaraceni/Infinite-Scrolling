@@ -32,9 +32,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Aplicação JavaScript: Como desenvolver uma filtragem de posts e scroll infinito
 
-## 🔖 Layout
+## 🔖 Demo
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/gpqavL469k0pPUGOmAQEM9/Explorer-Lab-%2301/duplicate).
+Você pode visualizar o layout do projeto através [DESSE LINK](https://infinite-scrolling-sooty.vercel.app/).
 
 ## :memo: Licença
 
