@@ -45,14 +45,16 @@ const showLoader = () => {
     removeLoader()
 }
 
-window.addEventListener('scroll', () => {
+const handleScrollToPageBottom = () => {
     const { clientHeight, scrollHeight, scrollTop } = document.documentElement
     const isPageBottomAlmostReached = scrollTop + clientHeight >= scrollHeight - 10
 
     if (isPageBottomAlmostReached) {
         showLoader()
     }
-})
+}
+
+window.addEventListener('scroll', handleScrollToPageBottom)
 
 const showPostIfMatchInputValue = inputValue => post => {
     const postTitle = post.querySelector('.post-title').textContent.toLowerCase()
