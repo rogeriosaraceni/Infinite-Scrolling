@@ -1,7 +1,7 @@
 <h1 align="center"> Infinite-Scrolling </h1>
 
 <p align="center">
-Aula do Roger Melo no <a href="https://www.youtube.com/watch?v=NnjDJt68uLs&list=PLpSJMw6H4PFMOJHMULTxKNOEw7g1cBuyP&index=8" target="_blank">Youtube</a>
+Aula do Roger Melo no <a target="_blank" href="https://www.youtube.com/watch?v=NnjDJt68uLs&list=PLpSJMw6H4PFMOJHMULTxKNOEw7g1cBuyP&index=8">Youtube</a>
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@ Aplicação JavaScript: Como desenvolver uma filtragem de posts e scroll infinit
 
 ## 🔖 Demo
 <p>
-    Você pode visualizar a demo do projeto através <a href="https://infinite-scrolling-sooty.vercel.app/" target="_blank">DESSE LINK.</a>
+    Você pode visualizar a demo do projeto através <a target="_blank" href="https://infinite-scrolling-sooty.vercel.app/">DESSE LINK.</a>
 </p>
 
 ## :memo: Licença
