@@ -6,7 +6,7 @@ let page = 1
 
 const getPosts = async () => {
     const response = await
-        fetch(`http://jsonplaceholder.typicode.com/posts?_limit=5&_page=${page}`)
+    fetch(`https://jsonplaceholder.typicode.com/posts?_limit=5&_page=${page}`)
     return response.json()
 }
 
