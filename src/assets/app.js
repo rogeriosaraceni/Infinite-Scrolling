@@ -54,7 +54,6 @@ const handleScrollToPageBottom = () => {
     }
 }
 
-
 const showPostIfMatchInputValue = inputValue => post => {
     const postTitle = post.querySelector('.post-title').textContent.toLowerCase()
     const postBody = post.querySelector('.post-body').textContent.toLowerCase()
