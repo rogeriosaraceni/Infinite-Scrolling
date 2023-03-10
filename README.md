@@ -1,23 +1,23 @@
-<h1 align="center"> Infinite-Scrolling </h1>
+<h1 style="text-align: center;"> Infinite-Scrolling </h1>
 
-<p align="center">
-Aula do Roger Melo no <a target="_blank" href="https://www.youtube.com/watch?v=NnjDJt68uLs&list=PLpSJMw6H4PFMOJHMULTxKNOEw7g1cBuyP&index=8">Youtube</a>
+<p style="text-align: center;">
+Aula do Roger Melo no <a href="https://www.youtube.com/watch?v=NnjDJt68uLs&list=PLpSJMw6H4PFMOJHMULTxKNOEw7g1cBuyP&index=8?target=_blank">Youtube</a>
 </p>
 
-<p align="center">
+<p style="text-align: center;">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
-<p align="center">
+<p style="text-align: center;">
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
 
 <br>
 
-<p align="center">
+<p style="text-align: center;">
   <img alt="Infinite-Scrolling" src=".github/Infinite-Scrolling.png" width="100%">
 </p>
 
@@ -33,9 +33,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Aplicação JavaScript: Como desenvolver uma filtragem de posts e scroll infinito
 
 ## 🔖 Demo
-<p>
-    Você pode visualizar a demo do projeto através <a target="_blank" href="https://infinite-scrolling-sooty.vercel.app/">DESSE LINK.</a>
-</p>
+
+ Você pode visualizar a demo do projeto através [DESSE LINK](https://infinite-scrolling-sooty.vercel.app/?target=_blank)
 
 ## :memo: Licença
 
