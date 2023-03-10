@@ -5,7 +5,8 @@ const filterInput = document.querySelector('#filter')
 let page = 1
 
 const getPosts = async () => {
-    const response = await fetch(`http://jsonplaceholder.typicode.com/posts?_limit=5&_page=${page}`)
+    const response = await
+        fetch(`http://jsonplaceholder.typicode.com/posts?_limit=5&_page=${page}`)
     return response.json()
 }
 
@@ -24,7 +25,6 @@ const addPostsIntoDOM = async () => {
     const postsTemplate = generatePostsTemplate(posts)
     postsContainer.innerHTML += postsTemplate
 }
-addPostsIntoDOM()
 
 const getNextPosts = () => {
     setTimeout(() => {
@@ -54,7 +54,6 @@ const handleScrollToPageBottom = () => {
     }
 }
 
-window.addEventListener('scroll', handleScrollToPageBottom)
 
 const showPostIfMatchInputValue = inputValue => post => {
     const postTitle = post.querySelector('.post-title').textContent.toLowerCase()
@@ -76,4 +75,7 @@ const handleInputValue = event => {
     posts.forEach(showPostIfMatchInputValue(inputValue))
 }
 
+addPostsIntoDOM()
+
+window.addEventListener('scroll', handleScrollToPageBottom)
 filterInput.addEventListener('input', handleInputValue)
