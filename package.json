@@ -1,0 +1,11 @@
+{
+  "name": "infinite-scrolling",
+  "version": "1.0.0",
+  "description": "Posts com scrolling infinito",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rogério Saraceni",
+  "license": "MIT"
+}
