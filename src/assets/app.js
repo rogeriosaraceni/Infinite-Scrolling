@@ -9,19 +9,19 @@ const getPosts = async () => {
     return response.json()
 }
 
+const generatePostsTemplate = posts => posts.map(({ id, title, body }) => `
+    <div class="post">
+        <div class="number">${id}</div>
+        <div class="post-info">
+            <h2 class="post-title">${title}</h2>
+            <p class="post-body">${body}</p>
+        </div>
+    </div>
+`).join('')
+
 const addPostsIntoDOM = async () => {
     const posts = await getPosts()
-
-    const postsTemplate = posts.map(({ id, title, body }) => `
-        <div class="post">
-            <div class="number">${id}</div>
-            <div class="post-info">
-                <h2 class="post-title">${title}</h2>
-                <p class="post-body">${body}</p>
-            </div>
-        </div>
-    `).join('')
-
+    const postsTemplate = generatePostsTemplate(posts)
     postsContainer.innerHTML += postsTemplate
 }
 addPostsIntoDOM()
