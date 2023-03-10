@@ -54,19 +54,24 @@ window.addEventListener('scroll', () => {
     }
 })
 
-filterInput.addEventListener('input', event => {
+const showPostIfMatchInputValue = inputValue => post => {
+    const postTitle = post.querySelector('.post-title').textContent.toLowerCase()
+    const postBody = post.querySelector('.post-body').textContent.toLowerCase()
+    const postsContainsInputValue = postTitle.includes(inputValue) || postBody.includes(inputValue)
+
+    if (postsContainsInputValue) {
+        post.style.display = 'flex'
+        return
+    }
+
+    post.style.display = 'none'
+}
+
+const handleInputValue = event => {
     const inputValue = event.target.value.toLowerCase()
     const posts = document.querySelectorAll('.post')
 
-    posts.forEach(post => {
-        const postTitle = post.querySelector('.post-title').textContent.toLowerCase()
-        const postBody = post.querySelector('.post-body').textContent.toLowerCase()
+    posts.forEach(showPostIfMatchInputValue(inputValue))
+}
 
-        if (postTitle.includes(inputValue) || postBody.includes(inputValue)) {
-            post.style.display = 'flex'
-            return
-        }
-
-        post.style.display = 'none'
-    })
-})
+filterInput.addEventListener('input', handleInputValue)
